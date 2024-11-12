@@ -28,5 +28,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           app_location: "/" # Ajusta si tu aplicación está en un subdirectorio
-          output_location: "dist" # Ajusta si el directorio de salida es diferente
-          deployment_action: upload
+          output_location: "dist/simple-notes" # Ajusta si el directorio de salida es diferente
