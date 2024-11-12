@@ -9,23 +9,24 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '20' # Usa Node 20
 
       - name: Install dependencies
         run: npm install
 
       - name: Build project
-        run: npm run build
+        run: npm run build --if-present
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
-          app_location: "/"                   # Cambia esto si tu proyecto está en otra carpeta
-          output_location: "dist"             # Cambia esto si el directorio de salida tiene otro nombre
+          app_location: "/" # Ajusta si tu aplicación está en un subdirectorio
+          output_location: "dist" # Ajusta si el directorio de salida es diferente
+          deployment_action: upload
