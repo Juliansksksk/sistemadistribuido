@@ -27,3 +27,5 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          app_location: "/" # Cambia esto si tu aplicación está en un subdirectorio
+          output_location: "dist" # Cambia esto si el directorio de salida es diferente
