@@ -1,0 +1,71 @@
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 40px auto; /* Menos margen */
+    padding: 30px; /* Ajuste del padding */
+    background-color: #f9f9f9; /* Fondo ligeramente gris */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Título principal */
+  h1 {
+    text-align: center;
+    color: #34495e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo del formulario */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Etiquetas */
+  label {
+    display: block;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  /* Input y textarea estilos */
+  input.mat-input-element, textarea.mat-input-element {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo de los botones */
+  button.mat-raised-button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  button.mat-raised-button[color="accent"] {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  button.mat-raised-button[color="primary"] {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  button.mat-raised-button[color="warn"] {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  button.mat-raised-button.cancel-button {
+    background-color: #7f8c8d;
+    color: #fff;
+  }
+  
