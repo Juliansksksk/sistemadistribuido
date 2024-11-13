@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build -- --prod # Esto asegura una compilación en producción para Angular
+        run: npm run build -- --configuration production # Cambiado para las versiones actuales de Angular
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
